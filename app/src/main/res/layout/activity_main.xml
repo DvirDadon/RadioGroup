@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:text="Choose the color you want to set as background" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbR"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:checked="true"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/rbB"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/rbY"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:text="Yellow" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="228dp"
+        android:layout_height="41dp"
+        android:onClick="btnChangeColor"
+        android:text="Change background color" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="228dp"
+        android:layout_height="41dp"
+        android:onClick="btnBackToStandard"
+        android:text="Change color to standard" />/
+
+</LinearLayout>
